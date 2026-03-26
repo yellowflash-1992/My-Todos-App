@@ -1,0 +1,235 @@
+.root {
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+@layer base {
+    button:not([disabled]) {
+        cursor: pointer;
+    }
+}
+
+body {
+    overflow-y: ;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #201f24;
+    border-radius: 10px;
+}
+
+.head1 {
+    font-size: 50px;
+    margin-top: 0;
+}
+
+input {
+    margin-right: 10px;
+    margin-bottom: 35px;
+    height: 45px;
+    width: 300px;
+    font-size: 20px;
+    padding-left: 10px;
+    background-color: white;
+    color: black;
+}
+
+.btn1 {
+    height: 40px;
+    width: 100px;
+}
+
+.below {
+    text-align: left;
+}
+
+.li-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 90px;
+}
+
+li {
+    list-style-type: decimal;
+    margin-top: 10px;
+    font-size: 19px;
+    font-weight: 300;
+    font-family: sans-serif;
+}
+
+h2 {
+    font-size: 23px;
+}
+
+.head2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-text {
+    /*change here to increase or decrease space for tasks*/
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+nav {
+    margin-top: 40px;
+}
+
+.input-error {
+    border: 2px solid red !important;
+}
+
+.input-error::placeholder {
+    color: red !important;
+}
+
+
+/* .actt {
+    background-color: rgb(140, 230, 140);
+    color: rgb(102, 98, 98);
+} */
+
+
+/* .actp {
+    background-color: rgb(10, 156, 10);
+    border: none;
+} */
+
+
+/* .inact {
+    background-color: rgb(233, 233, 12);
+    color: rgb(209, 21, 21);
+} */
+
+@media(min-width: 320px) and (max-width:480px) {
+    .btn1 {
+        height: 40px;
+        width: 60px;
+        line-height: 18px;
+        margin-top: 25px;
+        margin-right: 8px;
+    }
+    .input {
+        margin-left: 6px;
+    }
+    .search {
+        margin-right: 5px;
+        margin-top: -40px;
+    }
+    .query {
+        width: 100%;
+    }
+    .below {
+        margin-top: 150px;
+    }
+    .save1 {
+        margin-left: -15px;
+    }
+    .title {
+        margin-bottom: 25px;
+    }
+    .task-text {
+        flex: 0 0 100px;
+    }
+    .task-date {
+        margin-left: -10px;
+    }
+    .check {
+        display: none !important;
+    }
+    .btntask {
+        margin-right: 55px;
+    }
+    .deltask {
+        margin-left: 15px;
+    }
+    .intask {
+        margin-bottom: 100px;
+        position: absolute;
+    }
+    .saveb {
+        margin-left: -15px;
+    }
+    .taskstart {
+        width: 90%;
+        margin-left: 20px;
+    }
+}
+
+@media(min-width: 481px) and (max-width: 768px) {
+    .below {
+        margin-top: 100px;
+        width: 100%;
+        margin-left: -15px
+    }
+    .search {
+        margin-top: -10px;
+    }
+    .below2 {
+        display: block;
+        margin-left: -25px
+    }
+    .task-text {
+        flex: 0 0 200px;
+        margin-left: -80px
+    }
+    .task-date {
+        margin-left: -30px
+    }
+    .title {
+        margin-left: 20px;
+    }
+    .doneall {
+        margin-left: 200px;
+    }
+    .comptask {
+        margin-left: 0px;
+    }
+}
+
+@media(min-width: 769px) and (max-width: 1024px) {
+    .below {
+        margin-top: 150px;
+        width: 100%;
+        margin-left: auto;
+    }
+    .below2 {
+        display: block;
+        margin-left: -;
+    }
+    .task-date {
+        margin-left: -90px;
+    }
+    .title {
+        margin-left: 20px;
+    }
+    .search {
+        margin-right: -50px;
+    }
+    .doneall {
+        margin-left: 150px;
+    }
+    .comptask {
+        margin-left: 0px;
+    }
+}
+
+
+/* @media(min-width: 1024px) and (max-width: 1200px) {
+    .below {}
+}
+
+@media(min-width: 1200px) and (max-width: 1275px) {
+    .below {}
+} */
